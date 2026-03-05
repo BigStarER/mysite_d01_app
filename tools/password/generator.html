@@ -21,15 +21,16 @@
           <b data-i18n="pw_settings">Settings</b>
 
           <div class="small" style="margin-top:10px; line-height:2;">
-            <label>Length:
+            <label><span data-i18n="pw_length">Length</span>:
               <input id="len" type="number" min="6" max="64" value="16"
+                data-i18n-aria="pw_length"
                 style="width:90px; margin-left:8px; padding:8px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.03); color:#e9eefc;">
-            </label>
+              </label>
             <br>
             <label><input id="low" type="checkbox" checked> a-z</label>
             <label style="margin-left:12px"><input id="up" type="checkbox" checked> A-Z</label>
             <label style="margin-left:12px"><input id="num" type="checkbox" checked> 0-9</label>
-            <label style="margin-left:12px"><input id="sym" type="checkbox"> symbols</label>
+            <label style="margin-left:12px"><input id="sym" type="checkbox"> <span data-i18n="pw_symbols">Symbols</span></label>
           </div>
 
           <div style="margin-top:12px">
