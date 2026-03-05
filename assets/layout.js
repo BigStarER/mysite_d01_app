@@ -5,7 +5,10 @@
         <div class="brand">
           <div class="logo"></div>
           <div>
-            <h1><span data-i18n="brand">HAFY</span> — <span class="small" data-i18n="tagline">helper app for you</span></h1>
+            <div>
+              <div class="brand-title" data-i18n="brand">HAFY</div>
+              <div class="brand-sub" data-i18n="tagline">Helper App For You</div>
+            </div>
           </div>
         </div>
 
