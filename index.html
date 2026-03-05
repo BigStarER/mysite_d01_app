@@ -1,18 +1,73 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tools</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HAFY — helper app for you</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script src="./assets/i18n.js" defer></script>
 </head>
 <body>
-  <h1>Tools</h1>
-  <p><a href="./tools/">Перейти в Tools</a></p>
-  <ul>
-    <li><a href="./video/">Video tools</a></li>
-    <li><a href="./audio/">Audio tools</a></li>
-    <li><a href="./password/">Password tools</a></li>
-    <li><a href="../">На главную</a></li>
-  </ul>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <h1><span data-i18n="brand">HAFY</span> — <span class="small" data-i18n="tagline">helper app for you</span></h1>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a class="pill" href="./" data-i18n="nav_home">Home</a>
+        <a class="pill" href="./tools/" data-i18n="nav_tools">Tools</a>
+        <select class="select" id="langSelect" aria-label="Language">
+          <option value="be">BE</option>
+          <option value="pl">PL</option>
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+          <option value="de">DE</option>
+          <option value="es">ES</option>
+          <option value="it">IT</option>
+          <option value="fr">FR</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="h1" data-i18n="title_home">Welcome</div>
+        <p class="p" data-i18n="desc_home">Quick tools for everyday tasks. Choose a category.</p>
+
+        <div class="tools">
+          <a class="tool" href="./tools/video/">
+            <b data-i18n="cat_video">Video tools</b>
+            <div class="small">/tools/video/</div>
+          </a>
+
+          <a class="tool" href="./tools/audio/">
+            <b data-i18n="cat_audio">Audio tools</b>
+            <div class="small">/tools/audio/</div>
+          </a>
+
+          <a class="tool" href="./tools/password/">
+            <b data-i18n="cat_password">Password tools</b>
+            <div class="small">/tools/password/</div>
+          </a>
+        </div>
+
+        <div class="footer">
+          © <span data-i18n="brand">HAFY</span> — <span data-i18n="tagline">helper app for you</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="ad"><span data-i18n="ad">Ad space</span> 300×250</div>
+        <div style="height:12px"></div>
+        <div class="ad"><span data-i18n="ad">Ad space</span> 300×600</div>
+        <div style="height:12px"></div>
+        <div class="ad"><span data-i18n="ad">Ad space</span> 320×100</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
