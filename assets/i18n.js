@@ -34,7 +34,7 @@
   const I18N = {
     en: {
       brand: "HAFY",
-      tagline: "helper app for you",
+      tagline: "Helper App For You",
       nav_home: "Home",
       nav_tools: "Tools",
       title_home: "Welcome",
@@ -49,7 +49,7 @@
     },
     ru: {
       brand: "HAFY",
-      tagline: "helper app for you",
+      tagline: "Helper App For You",
       nav_home: "Главная",
       nav_tools: "Инструменты",
       title_home: "Добро пожаловать",
@@ -64,7 +64,7 @@
     },
     pl: {
       brand: "HAFY",
-      tagline: "helper app for you",
+      tagline: "Helper App For You",
       nav_home: "Start",
       nav_tools: "Narzędzia",
       title_home: "Witaj",
@@ -79,7 +79,7 @@
     },
     be: {
       brand: "HAFY",
-      tagline: "helper app for you",
+      tagline: "Helper App For You",
       nav_home: "Галоўная",
       nav_tools: "Інструменты",
       title_home: "Вітаем",
@@ -94,7 +94,7 @@
     },
     de: {
       brand: "HAFY",
-      tagline: "helper app for you",
+      tagline: "Helper App For You",
       nav_home: "Start",
       nav_tools: "Tools",
       title_home: "Willkommen",
@@ -109,7 +109,7 @@
     },
     es: {
       brand: "HAFY",
-      tagline: "helper app for you",
+      tagline: "Helper App For You",
       nav_home: "Inicio",
       nav_tools: "Herramientas",
       title_home: "Bienvenido",
@@ -124,7 +124,7 @@
     },
     it: {
       brand: "HAFY",
-      tagline: "helper app for you",
+      tagline: "Helper App For You",
       nav_home: "Home",
       nav_tools: "Strumenti",
       title_home: "Benvenuto",
@@ -139,7 +139,7 @@
     },
     fr: {
       brand: "HAFY",
-      tagline: "helper app for you",
+      tagline: "Helper App For You",
       nav_home: "Accueil",
       nav_tools: "Outils",
       title_home: "Bienvenue",
