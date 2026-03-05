@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HAFY — Password generator</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
+  <script src="../../assets/i18n.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <h1><span data-i18n="brand">HAFY</span> — <span class="small" data-i18n="tagline">helper app for you</span></h1>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a class="pill" href="../../" data-i18n="nav_home">Home</a>
+        <a class="pill" href="../" data-i18n="nav_tools">Tools</a>
+        <select class="select" id="langSelect" aria-label="Language">
+          <option value="be">BE</option><option value="pl">PL</option><option value="en">EN</option>
+          <option value="ru">RU</option><option value="de">DE</option><option value="es">ES</option>
+          <option value="it">IT</option><option value="fr">FR</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="h1">Password generator</div>
+        <p class="p">Работает в браузере. Никаких данных на сервер не отправляем.</p>
+
+        <div class="tool">
+          <b>Settings</b>
+          <div class="small" style="margin-top:8px">
+            Length:
+            <input id="len" type="number" min="6" max="64" value="16" />
+            <label style="margin-left:10px"><input id="low" type="checkbox" checked> a-z</label>
+            <label style="margin-left:10px"><input id="up" type="checkbox" checked> A-Z</label>
+            <label style="margin-left:10px"><input id="num" type="checkbox" checked> 0-9</label>
+            <label style="margin-left:10px"><input id="sym" type="checkbox"> symbols</label>
+          </div>
+          <div style="margin-top:12px">
+            <button class="pill" id="genBtn" type="button">Generate</button>
+            <button class="pill" id="copyBtn" type="button">Copy</button>
+          </div>
+          <div style="margin-top:12px">
+            <input id="out" type="text" readonly style="width:100%; padding:12px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.03); color:#e9eefc;">
+          </div>
+          <div class="small" id="msg" style="margin-top:8px"></div>
+        </div>
+
+        <div class="footer">
+          <a class="pill" href="./" data-i18n="back">Back</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="ad"><span data-i18n="ad">Ad space</span> 300×250</div>
+        <div style="height:12px"></div>
+        <div class="ad"><span data-i18n="ad">Ad space</span> 300×600</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function randInt(max){ return Math.floor(Math.random() * max); }
+
+    function generate(){
+      const len = Math.max(6, Math.min(64, parseInt(document.getElementById('len').value || '16',10)));
+      const low = document.getElementById('low').checked;
+      const up  = document.getElementById('up').checked;
+      const num = document.getElementById('num').checked;
+      const sym = document.getElementById('sym').checked;
+
+      let chars = "";
+      if(low) chars += "abcdefghijklmnopqrstuvwxyz";
+      if(up)  chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      if(num) chars += "0123456789";
+      if(sym) chars += "!@#$%^&*()-_=+[]{};:,.?/";
+
+      if(!chars){
+        return { ok:false, value:"", msg:"Select at least one character set." };
+      }
+
+      let out = "";
+      for(let i=0;i<len;i++){
+        out += chars[randInt(chars.length)];
+      }
+      return { ok:true, value:out, msg:"" };
+    }
+
+    const out = document.getElementById('out');
+    const msg = document.getElementById('msg');
+
+    document.getElementById('genBtn').addEventListener('click', () => {
+      const r = generate();
+      if(!r.ok){ msg.textContent = r.msg; out.value=""; return; }
+      out.value = r.value;
+      msg.textContent = "Generated.";
+    });
+
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      if(!out.value){ msg.textContent = "Nothing to copy."; return; }
+      try{
+        await navigator.clipboard.writeText(out.value);
+        msg.textContent = "Copied.";
+      } catch(e){
+        msg.textContent = "Copy failed (browser permission).";
+      }
+    });
+
+    // auto-generate once
+    document.getElementById('genBtn').click();
+  </script>
+</body>
+</html>
