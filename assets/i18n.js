@@ -46,7 +46,11 @@
       cat_audio: "Audio tools",
       cat_password: "Password tools",
       back: "Back",
-      ad: "Ad space"
+      ad: "Ad space",
+      btn_generate: "Generate",
+      btn_copy: "Copy",
+      pw_settings: "Settings",
+      pw_tip: "Works in your browser. Nothing is uploaded.",
     },
     ru: {
       brand: "HAFY",
@@ -61,7 +65,11 @@
       cat_audio: "Инструменты аудио",
       cat_password: "Пароли",
       back: "Назад",
-      ad: "Место для рекламы"
+      ad: "Место для рекламы",
+      btn_generate: "Сгенерировать",
+      btn_copy: "Копировать",
+      pw_settings: "Настройки",
+      pw_tip: "Работает в браузере. Ничего на сервер не отправляем.",
     },
     pl: {
       brand: "HAFY",
@@ -76,7 +84,11 @@
       cat_audio: "Narzędzia audio",
       cat_password: "Hasła",
       back: "Wstecz",
-      ad: "Miejsce na reklamę"
+      ad: "Miejsce na reklamę",
+      btn_generate: "Generuj",
+      btn_copy: "Kopiuj",
+      pw_settings: "Ustawienia",
+      pw_tip: "Działa w przeglądarce. Nic nie jest wysyłane na serwer.",
     },
     be: {
       brand: "HAFY",
@@ -91,7 +103,11 @@
       cat_audio: "Аўдыё інструменты",
       cat_password: "Паролі",
       back: "Назад",
-      ad: "Месца для рэкламы"
+      ad: "Месца для рэкламы",
+      btn_generate: "Згенераваць",
+      btn_copy: "Капіяваць",
+      pw_settings: "Налады",
+      pw_tip: "Працоўе ў браўзеры. Нічога не адпраўляецца на сервер."
     },
     de: {
       brand: "HAFY",
@@ -106,7 +122,11 @@
       cat_audio: "Audio-Tools",
       cat_password: "Passwörter",
       back: "Zurück",
-      ad: "Werbeplatz"
+      ad: "Werbeplatz",
+      btn_generate: "Generieren",
+      btn_copy: "Kopieren",
+      pw_settings: "Einstellungen",
+      pw_tip: "Funktioniert im Browser. Es werden keine Daten hochgeladen."
     },
     es: {
       brand: "HAFY",
@@ -121,7 +141,11 @@
       cat_audio: "Herramientas de audio",
       cat_password: "Contraseñas",
       back: "Atrás",
-      ad: "Espacio publicitario"
+      ad: "Espacio publicitario",
+      btn_generate: "Generar",
+      btn_copy: "Copiar",
+      pw_settings: "Configuración",
+      pw_tip: "Funciona en tu navegador. No se sube ningún dato."
     },
     it: {
       brand: "HAFY",
@@ -136,7 +160,11 @@
       cat_audio: "Strumenti audio",
       cat_password: "Password",
       back: "Indietro",
-      ad: "Spazio pubblicitario"
+      ad: "Spazio pubblicitario",
+      btn_generate: "Genera",
+      btn_copy: "Copia",
+      pw_settings: "Impostazioni",
+      pw_tip: "Funziona nel browser. Nessun dato viene caricato."
     },
     fr: {
       brand: "HAFY",
@@ -151,7 +179,11 @@
       cat_audio: "Outils audio",
       cat_password: "Mots de passe",
       back: "Retour",
-      ad: "Espace pub"
+      ad: "Espace pub",
+      btn_generate: "Générer",
+      btn_copy: "Copier",
+      pw_settings: "Paramètres",
+      pw_tip: "Fonctionne dans le navigateur. Aucune donnée n'est envoyée."
     }
   };
 
