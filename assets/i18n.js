@@ -51,6 +51,13 @@
       btn_copy: "Copy",
       pw_settings: "Settings",
       pw_tip: "Works in your browser. Nothing is uploaded.",
+      pw_length: "Length",
+      pw_symbols: "Symbols",
+      msg_generated: "Generated.",
+      msg_copied: "Copied.",
+      msg_copy_fail: "Copy failed (browser permission).",
+      msg_nothing: "Nothing to copy.",
+      msg_select_charset: "Select at least one character set."
     },
     ru: {
       brand: "HAFY",
@@ -70,6 +77,13 @@
       btn_copy: "Копировать",
       pw_settings: "Настройки",
       pw_tip: "Работает в браузере. Ничего на сервер не отправляем.",
+      pw_length: "Длина",
+      pw_symbols: "Символы",
+      msg_generated: "Сгенерировано.",
+      msg_copied: "Скопировано.",
+      msg_copy_fail: "Не удалось скопировать (разрешения браузера).",
+      msg_nothing: "Нечего копировать.",
+      msg_select_charset: "Выбери хотя бы один набор символов."
     },
     pl: {
       brand: "HAFY",
@@ -89,6 +103,13 @@
       btn_copy: "Kopiuj",
       pw_settings: "Ustawienia",
       pw_tip: "Działa w przeglądarce. Nic nie jest wysyłane na serwer.",
+      pw_length: "Długość",
+      pw_symbols: "Symbole",
+      msg_generated: "Wygenerowano.",
+      msg_copied: "Skopiowano.",
+      msg_copy_fail: "Nie udało się skopiować (uprawnienia przeglądarki).",
+      msg_nothing: "Nie ma czego kopiować.",
+      msg_select_charset: "Wybierz co najmniej jeden zestaw znaków."
     },
     be: {
       brand: "HAFY",
@@ -107,7 +128,14 @@
       btn_generate: "Згенераваць",
       btn_copy: "Капіяваць",
       pw_settings: "Налады",
-      pw_tip: "Працоўе ў браўзеры. Нічога не адпраўляецца на сервер."
+      pw_tip: "Працоўе ў браўзеры. Нічога не адпраўляецца на сервер.",
+      pw_length: "Даўжыня",
+      pw_symbols: "Сімвалы",
+      msg_generated: "Згенеравана.",
+      msg_copied: "Скапіявана.",
+      msg_copy_fail: "Не атрымалася скапіяваць (дазволы браўзера).",
+      msg_nothing: "Няма чаго капіяваць.",
+      msg_select_charset: "Абяры хаця б адзін набор сімвалаў."
     },
     de: {
       brand: "HAFY",
@@ -126,7 +154,14 @@
       btn_generate: "Generieren",
       btn_copy: "Kopieren",
       pw_settings: "Einstellungen",
-      pw_tip: "Funktioniert im Browser. Es werden keine Daten hochgeladen."
+      pw_tip: "Funktioniert im Browser. Es werden keine Daten hochgeladen.",
+      pw_length: "Länge",
+      pw_symbols: "Symbole",
+      msg_generated: "Erstellt.",
+      msg_copied: "Kopiert.",
+      msg_copy_fail: "Kopieren fehlgeschlagen (Browser-Berechtigung).",
+      msg_nothing: "Nichts zum Kopieren.",
+      msg_select_charset: "Wähle mindestens einen Zeichensatz aus."
     },
     es: {
       brand: "HAFY",
@@ -145,7 +180,14 @@
       btn_generate: "Generar",
       btn_copy: "Copiar",
       pw_settings: "Configuración",
-      pw_tip: "Funciona en tu navegador. No se sube ningún dato."
+      pw_tip: "Funciona en tu navegador. No se sube ningún dato.",
+      pw_length: "Longitud",
+      pw_symbols: "Símbolos",
+      msg_generated: "Generado.",
+      msg_copied: "Copiado.",
+      msg_copy_fail: "Error al copiar (permiso del navegador).",
+      msg_nothing: "Nada que copiar.",
+      msg_select_charset: "Elige al menos un conjunto de caracteres."
     },
     it: {
       brand: "HAFY",
@@ -164,7 +206,14 @@
       btn_generate: "Genera",
       btn_copy: "Copia",
       pw_settings: "Impostazioni",
-      pw_tip: "Funziona nel browser. Nessun dato viene caricato."
+      pw_tip: "Funziona nel browser. Nessun dato viene caricato.",
+      pw_length: "Lunghezza",
+      pw_symbols: "Simboli",
+      msg_generated: "Generato.",
+      msg_copied: "Copiato.",
+      msg_copy_fail: "Copia non riuscita (permessi del browser).",
+      msg_nothing: "Niente da copiare.",
+      msg_select_charset: "Seleziona almeno un set di caratteri."
     },
     fr: {
       brand: "HAFY",
@@ -183,7 +232,14 @@
       btn_generate: "Générer",
       btn_copy: "Copier",
       pw_settings: "Paramètres",
-      pw_tip: "Fonctionne dans le navigateur. Aucune donnée n'est envoyée."
+      pw_tip: "Fonctionne dans le navigateur. Aucune donnée n'est envoyée.",
+      pw_length: "Longueur",
+      pw_symbols: "Symboles",
+      msg_generated: "Généré.",
+      msg_copied: "Copié.",
+      msg_copy_fail: "Échec de la copie (autorisation du navigateur).",
+      msg_nothing: "Rien à copier.",
+      msg_select_charset: "Choisis au moins un jeu de caractères."
     }
   };
 
