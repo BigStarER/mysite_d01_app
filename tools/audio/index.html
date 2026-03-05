@@ -5,59 +5,38 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HAFY — Audio tools</title>
   <link rel="stylesheet" href="../../assets/style.css" />
+  <script src="../../assets/layout.js" defer></script>
   <script src="../../assets/i18n.js" defer></script>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <div class="brand">
-        <div class="logo"></div>
-        <div>
-          <h1><span data-i18n="brand">HAFY</span> — <span class="small" data-i18n="tagline">helper app for you</span></h1>
-        </div>
-      </div>
-
-      <div class="nav">
-        <a class="pill" href="../../" data-i18n="nav_home">Home</a>
-        <a class="pill" href="../" data-i18n="nav_tools">Tools</a>
-        <select class="select" id="langSelect" aria-label="Language">
-          <option value="be">BE</option><option value="pl">PL</option><option value="en">EN</option>
-          <option value="ru">RU</option><option value="de">DE</option><option value="es">ES</option>
-          <option value="it">IT</option><option value="fr">FR</option>
-        </select>
-      </div>
-    </div>
+    <div id="siteHeader"></div>
 
     <div class="grid">
       <div class="card">
         <div class="h1">Audio tools</div>
-        <p class="p">Здесь будут инструменты для аудио (каркас страницы).</p>
+        <p class="p">Инструменты для работы с твоим аудио (каркас).</p>
 
         <div class="tools">
           <div class="tool">
-            <b>Convert audio (mp3 / m4a / wav)</b>
-            <div class="small">Скоро.</div>
+            <b>Convert audio</b>
+            <div class="small">mp3 / m4a / wav — скоро.</div>
           </div>
-
           <div class="tool">
             <b>Cut audio</b>
             <div class="small">Скоро.</div>
           </div>
-
           <div class="tool">
             <b>Normalize loudness</b>
             <div class="small">Скоро.</div>
           </div>
-
           <div class="tool">
             <b>Change bitrate</b>
             <div class="small">Скоро.</div>
           </div>
         </div>
 
-        <div class="footer">
-          <a class="pill" href="../" data-i18n="back">Back</a>
-        </div>
+        <div id="siteFooter"></div>
       </div>
 
       <div class="card">
@@ -67,5 +46,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.HAFY_LAYOUT) window.HAFY_LAYOUT.mount("../../");
+    });
+  </script>
 </body>
 </html>
