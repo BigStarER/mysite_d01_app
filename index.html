@@ -55,9 +55,12 @@
     </div>
   </div>
 
-  <script>
-    // base = "./" because we are at root
-    window.HAFY_LAYOUT && window.HAFY_LAYOUT.mount("./");
-  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.HAFY_LAYOUT) {
+    window.HAFY_LAYOUT.mount("./");
+  }
+});
+</script>
 </body>
 </html>
