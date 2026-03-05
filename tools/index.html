@@ -48,9 +48,12 @@
     </div>
   </div>
 
-  <script>
-    // base = "../" because we are in /tools/
-    window.HAFY_LAYOUT && window.HAFY_LAYOUT.mount("../");
-  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.HAFY_LAYOUT) {
+    window.HAFY_LAYOUT.mount("../");
+  }
+});
+</script>
 </body>
 </html>
