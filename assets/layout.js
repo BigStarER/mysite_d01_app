@@ -14,9 +14,14 @@
           <a class="pill" href="${base}tools/" data-i18n="nav_tools">Tools</a>
 
           <select class="select" id="langSelect" aria-label="Language">
-            <option value="be">BE</option><option value="pl">PL</option><option value="en">EN</option>
-            <option value="ru">RU</option><option value="de">DE</option><option value="es">ES</option>
-            <option value="it">IT</option><option value="fr">FR</option>
+            <option value="be">BE</option>
+            <option value="pl">PL</option>
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+            <option value="de">DE</option>
+            <option value="es">ES</option>
+            <option value="it">IT</option>
+            <option value="fr">FR</option>
           </select>
         </div>
       </div>
@@ -35,8 +40,14 @@
     mount(base) {
       const header = document.getElementById("siteHeader");
       const footer = document.getElementById("siteFooter");
+
       if (header) header.innerHTML = headerHTML(base);
       if (footer) footer.innerHTML = footerHTML();
+
+      // важно: после вставки шапки заново применяем язык и привязываем селект
+      if (window.HAFY && window.HAFY.applyCurrent) {
+        window.HAFY.applyCurrent();
+      }
     }
   };
 })();
