@@ -199,6 +199,25 @@
       el.textContent = val;
     });
 
+        // translate attributes: placeholder/title/aria-label
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+      const key = el.getAttribute("data-i18n-placeholder");
+      const val = dict[key] ?? I18N[DEFAULT_LANG][key];
+      if (val != null) el.setAttribute("placeholder", val);
+    });
+
+    document.querySelectorAll("[data-i18n-title]").forEach(el => {
+      const key = el.getAttribute("data-i18n-title");
+      const val = dict[key] ?? I18N[DEFAULT_LANG][key];
+      if (val != null) el.setAttribute("title", val);
+    });
+
+    document.querySelectorAll("[data-i18n-aria]").forEach(el => {
+      const key = el.getAttribute("data-i18n-aria");
+      const val = dict[key] ?? I18N[DEFAULT_LANG][key];
+      if (val != null) el.setAttribute("aria-label", val);
+    });
+
     // синхронизируем селект, если уже есть
     const sel = document.getElementById("langSelect");
     if (sel) sel.value = lang;
